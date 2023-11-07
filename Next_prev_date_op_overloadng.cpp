@@ -9,7 +9,7 @@ private:
 public:
     void input()
     {
-        cout << "Enter day, month, year: ";
+        cout << "Enter day <space> month <space> year: ";
         cin >> day >> month >> year;
     }
 
@@ -81,11 +81,13 @@ public:
 int main()
 {
     Overloading obj;
+    
     int choice;
    // string operator_name;
    obj.input();
     cout<<"1. Next date \t 2. Previous date \t 3.Both"<<endl;
     cin>>choice;
+    cout<<"Enter choice: ";
     switch (choice)
     {
     case 1:
